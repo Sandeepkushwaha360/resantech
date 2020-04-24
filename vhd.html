@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+  input[type=text] {
+  width: 50%;
+  padding: 5px 20px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border: none;
+  
+  color: white;
+ 
+}
+.box{
+width:50px;
+height:50px;
+background-color:white;}
+.blackbx{
+width:150px;
+height:150px;
+background-color:black;}
+
+  #ip1 {
+    border-radius: 18px;
+    background: #609;
+    padding: 20px; 
+    width: 200px;
+    height: 15px;    
+}
+
+#ip2 {
+    border-radius: 25px;
+    border: 2px solid white;
+    padding: 20px; 
+    width: 290px;
+    height: 15px;
+	
+}
+
+#ip3 {
+    border-radius: 0px 0px 25px 0px;
+    background: #609;
+    padding: 20px; 
+    width: 200px;
+    height: 15px; 
+}
+
+#ip4 {
+    border-radius: 15px 50px 30px;
+    border: 2px solid #609;
+    padding: 20px; 
+    width: 200px;
+    height: 15px; 
+}
+
+#ip5 {
+    border-radius: 15px 50px;
+    background: #609;
+    padding: 20px; 
+    width: 200px;
+    height: 15px; 
+} 
+
+#ip6 {
+    border-radius: 50%;
+    border: 2px solid #609;
+    padding: 20px; 
+    width: 200px;
+    height: 15px;
+}
+
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 60px;
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-indicators {
+    position: relative;
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-top: 20px;
+    margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all .4s ease-in;
+    vertical-align: middle;
+}
+#quote-carousel .carousel-indicators .active {
+    width: 128px;
+    height: 128px;
+    opacity: 1;
+    transition: all .2s;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+.p1{
+font-size:12px;}
+
+.section2{
+padding-top:120px;}
+
+.heading{
+font-size:37px;}
+
+ 
+.background-image {
+
+ width: 100%;
+ height:500px;
+ background-image: url('./images/333.png');
+ background-size: cover;
+ background-repeat:no-repeat;
+ background-position: center; 
+}
+.bg_welcome{
+background-color:#fafafa;
+width:100%;
+}
+.bg_img{
+padding-top:40px;}
+.BG_RESANTECH{
+padding-top:80px;}
+
+.background-image1 {
+
+ width: 100%;
+ height:600px;
+ background-image: url('./images/process.png');
+ background-size: cover;
+ background-repeat: no-repeat;
+  
+}
+
+.new_projects{
+background-color:#181725;
+width:100%;
+}
+section {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    background-color: #181725;
+}
+.wrap {
+    display: flex;
+    background: #23232f;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 7px 7px 30px -5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    color:white;
+}
+
+.wrap:hover {
+    background: blue;
+    color: white;
+}
+
+.ico-wrap {
+    margin: auto;
+}
+
+.mbr-iconfont {
+    font-size: 4.5rem !important;
+    color: white;
+    margin: 1rem;
+    padding-right: 1rem;
+}
+.vcenter {
+    margin: auto;
+}
+
+.mbr-section-title3 {
+    text-align: left;
+}
+h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.display-5 {
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 1.4rem;
+}
+.mbr-bold {
+    font-weight: 700;
+}
+
+
+.display-6 {
+    font-family: 'Source Sans Pro',sans-serif;
+    }
+.new_h2{
+color:white;}
+.projects{
+width:100%;
+
+background-color:#23266b;}
+.new_h1{
+color:white;
+margin:75px}
+.bg_Testmonials{
+background-color:#fafafa;
+padding-top:30px;
+padding-bottom:30px;
+}
+.ft1{
+background-color:#f1f2f6;
+padding-top:60px;
+}
+.bg_portpolio{
+padding-bottom:30px;
+padding-top:30px;}
+
+.bg_portpolio1{
+padding-bottom:50px;
+}
+
+
+
+
+
+
+  </style>
+  
+  </head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+<div class="container section1">
+<div class="row">
+
+<div class="col-lg-4 section2">
+<h2> We offer Creative digital
+Solution Boost your 
+Business </h2>
+<p class="p1">
+Choose what matters  your Business & your Custmers we combine
+
+Choose what matters  your Business & your Custmers we combine
+
+Mobile And Web development
+
+</p>
+
+<form>
+  
+  
+ <input type="text" value="ViewMore" id="ip3"/>
+</form>
+</div>
+<div class="col-lg-8">
+<img src="images/background.png" alt="Pineapple" class="img-resposive" width="100%" />
+</div>
+</div>
+</div>
+<br>
+
+
+<div class="background-image">
+<div class="container">
+<div class ="row">
+<div class="col-sm-2">
+</div>
+<div class="col-sm-4">
+<p class="heading">Company Introduction</p>
+<p>Resantech is providing custom software
+Resantech is providing custom software
+Resantech is providing custom software
+Resantech is providing custom software</p>
+</div>
+<div class="col-sm-3">
+<div class="box">
+</div>
+<h4>Mobile Application</h4>
+<p>Resantech is providing custom software
+Resantech is providing custom software
+Resantech is providing custom software</p>
+<div class="box">
+</div>
+<h4>Mobile Application</h4>
+<p>Resantech is providing custom software
+Resantech is providing custom software
+Resantech is providing custom software</p>
+</div>
+<div class="col-sm-3">
+<div class="box">
+</div>
+<h4>Mobile Application</h4>
+<p>Resantech is providing custom software
+Resantech is providing custom software
+Resantech is providing custom software</p>
+<div class="box">
+</div>
+<h4>Mobile Application</h4>
+<p>Resantech is providing custom software
+Resantech is providing custom software
+Resantech is providing custom software</p>
+</div>
+</div>
+</div>
+
+<div class="bg_welcome">
+<div class="container">
+<div class="row">
+<div class="col-sm-2">
+</div>
+<div class="col-sm-4 bg_img">
+<img src="images/44.png" alt="Pineapple" width="300" height="300">
+</div>
+<div class="col-sm-4 BG_RESANTECH">
+<h5>WELCOME To RESANTECH</h5>
+<h3>ABOUT US</h3>
+<p>Resantech is providing custom software</p>
+<p>Resantech is providing custom software</p>
+<p>Resantech is providing custom software</p>
+<p>Resantech is providing custom software</p>
+<input type="text" value="ViewMore" id="ip3"/>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+<div class="background-image1">
+<div class="container">
+
+<div class="row">
+<h1>Process</h1>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="new_projects0">
+<section>
+
+<div class="container new">
+ <h2 class="new_h2">New Stuning Project</h2>
+ <p class="new_h2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+	
+		<div class="row mbr-justify-content-center">
+         
+            <div class="col-lg-6 mbr-col-md-6">
+                <div class="wrap">
+                    <div class="ico-wrap">
+                        <span class="mbr-iconfont fa-volume-up fa"></span>
+                    </div>
+                    <div class="text-wrap vcenter">
+                        <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Stay <span>Successful</span></h2>
+                        <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mbr-col-md-10">
+                <div class="wrap">
+                    <div class="ico-wrap">
+                        <span class="mbr-iconfont fa-calendar fa"></span>
+                    </div>
+                    <div class="text-wrap vcenter">
+                        <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Create
+                            <span>An Effective Team</span>
+                        </h2>
+                        <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mbr-col-md-10">
+                <div class="wrap">
+                    <div class="ico-wrap">
+                        <span class="mbr-iconfont fa-globe fa"></span>
+                    </div>
+                    <div class="text-wrap vcenter">
+                        <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Launch
+                            <span>A Unique Project</span>
+                        </h2>
+                        <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mbr-col-md-10">
+                <div class="wrap">
+                    <div class="ico-wrap">
+                        <span class="mbr-iconfont fa-trophy fa"></span>
+                    </div>
+                    <div class="text-wrap vcenter">
+                        <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Achieve <span>Your Targets</span></h2>
+                        <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+
+</div>
+
+</section>
+<div class="projects">
+<div class="container">
+<div class="row">
+<div class="col-sm-2">
+</div>
+<div class="col-sm-2">
+<h1 class="new_h1">3750</h1>
+</div>
+<div class="col-sm-2">
+<h1 class="new_h1">3750</h1>
+</div>
+<div class="col-sm-2">
+<h1 class="new_h1">3750</h1>
+</div>
+<div class="col-sm-2">
+<h1 class="new_h1">3750</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container">
+<div class="row bg_portpolio">
+<div class="col-lg-2">
+</div>
+<div class="col-lg-4">
+
+<h1>PORTFOLIO</h1>
+<p>Resantech is providing custom software
+Resantech is providing custom software
+Resantech is providing </p>
+</div>
+</div>
+
+
+<div class="row bg_portpolio1">
+
+
+<div class="col-sm-2">
+</div>
+<div class="col-sm-3">
+
+
+<li>Aboutsus</li>
+<li>Services</li>
+<li>News & Blog</li>
+<li>Contactus</li>
+<li>Case</li>
+
+</div>
+<div class="col-sm-4 col-md-4 col-lg-4 ">
+<img src="images/p6.png" alt="Pineapple" width="300" height="300"/><br>
+<center><input type="text" value="ViewMore" id="ip3"/></center>
+</div>
+<div class="col-sm-3">
+<div class="blackbx">
+</div>
+<br>
+<div class="blackbx">
+</div
+</div>
+</div>
+</div>
+</div>
+
+<div class="bg_Testmonials">
+<center><h1>Testmonials</h1></center>
+
+<div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                    <!-- Carousel Slides / Quotes -->
+                    <div class="carousel-inner text-center">
+                        <!-- Quote 1 -->
+                        <div class="item active">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !</p>
+                                        <small>Someone famous</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <!-- Quote 2 -->
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                                        <small>Someone famous</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <!-- Quote 3 -->
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. .</p>
+                                        <small>Someone famous</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <!-- Bottom Carousel Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="https://s3.amazonaws.com/uifaces/faces/twitter/mantia/128.jpg" alt="">
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg" alt="">
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
+                        </li>
+                    </ol>
+
+                    <!-- Carousel Buttons Next/Prev -->
+                    <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                    <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+      <!--  <a class="btn btn-primary" href="http://thecodeblock.com/create-a-quote-testimonial-slider-using-bootstrap-carousel"><i class="fa fa-arrow-left"></i> Back to Article</a -->
+</div>
+</div>
+
+<div class="ft1">
+<div class="container">
+<div class="row">
+<div class="col-sm-2 col-lg-2">
+</div>
+<div class="col-sm-3">
+<h4>ADDRESS</h4>
+<p>99.st jomblo park pekanubaru28292,<BR>Indonesia (123)456 7890 <BR>resan@tech.cm</p>
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-instagram"></a>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3">
+<h4>USEFULLINKS</h4>
+<ul>
+<li>Aboutsus</li>
+<li>Services</li>
+<li>News & Blog</li>
+<li>Contactus</li>
+<li>Case</li>
+</ul>
+</div>
+<div class="col-lg-4 col-md-4 ">
+<h4>GET SUBSCRIBED NOW</h4>
+<P>separated they live in bookmarkgrove rigt at the coast of the semantics a large language ocean a small river duden</p>
+
+<input type="text" id="ip2"/>
+<input type="text" id="ip1"/>
+</div>
+</div>
+</div>
+</div>
+
+ 
+
+</body>
+</html>
